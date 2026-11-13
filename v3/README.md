@@ -1,9 +1,9 @@
-# Fs20modConverterV3 1.2.3.0
+# Fs20modConverterV3 1.2.4.0
 
 FS19 → FS20（移动版）mod 转换器。UI 使用 HTML + CSS + JS，由本地 http 服务（127.0.0.1）加载进 WebView；转换引擎为原生 Kotlin 管线。
 
 ## 文件
-- `Fs20modConverterV3_1.2.3.0.apk`：已签名安装包（v3 签名方案，minSdk 31）
+- `Fs20modConverterV3_1.2.4.0.apk`：已签名安装包（v3 签名方案，minSdk 31）
 - `Fs20modConverterV3_工程源码.zip`：完整工程源码（不含 build 目录与签名密钥）
 
 ## 转换规则
@@ -21,3 +21,8 @@ FS19 → FS20（移动版）mod 转换器。UI 使用 HTML + CSS + JS，由本�
 ## 界面说明
 - 仅「转换」「设置」两页，工具页在做完真机验证前隐藏
 - Android 15 通过 windowOptOutEdgeToEdgeEnforcement 退出强制全屏，另用 inset 容器兜底，内容不压状态栏
+
+## 日志与崩溃
+- 运行轨迹实时写入 `filesDir/run_log.txt`，界面「设置 → 运行日志」可查看与导出
+- 未捕获异常生成 `crash_log.txt`，同时写入系统下载目录 `Fs20crash_<时间戳>.txt`，内容含完整堆栈与崩溃前 200 条轨迹
+- 记录范围：进程启动、HTTP 服务、WebView 页面加载、JS console、SAF 选择、modDesc 解析、每辆车、每个转换步骤、打包与导出
