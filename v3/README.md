@@ -1,9 +1,9 @@
-# Fs20modConverterV3 1.2.8.0
+# Fs20modConverterV3 1.3.0.0
 
 FS19 → FS20（移动版）mod 转换器。UI 使用 HTML + CSS + JS，由本地 http 服务（127.0.0.1）加载进 WebView；转换引擎为原生 Kotlin 管线。
 
 ## 文件
-- `Fs20modConverterV3_1.2.8.0.apk`：已签名安装包（v3 签名方案，minSdk 31）
+- `Fs20modConverterV3_1.3.0.0.apk`：已签名安装包（v3 签名方案，minSdk 31）
 - `Fs20modConverterV3_工程源码.zip`：完整工程源码（不含 build 目录与签名密钥）
 
 ## 转换规则
